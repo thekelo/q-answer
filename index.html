@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QA Website - Home</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="/" class="logo">QA Site</a>
+      <div class="search-bar">
+        <input type="text" placeholder="Search questions...">
+        <button>Search</button>
+      </div>
+      <div class="auth-buttons">
+        <button id="loginBtn">Log In</button>
+        <button id="signupBtn">Sign Up</button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="sidebar">
+        <h3>Popular Tags</h3>
+        <ul class="tags">
+          <li><a href="#">javascript</a></li>
+          <li><a href="#">python</a></li>
+          <li><a href="#">css</a></li>
+        </ul>
+      </div>
+
+      <div class="content">
+        <div class="questions-header">
+          <h1>Top Questions</h1>
+          <a href="ask.html" class="ask-btn">Ask Question</a>
+        </div>
+
+        <div class="questions-list" id="questionsList">
+          <!-- Questions will be loaded here via JS -->
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="js/questions.js"></script>
+  <script src="js/auth.js"></script>
+</body>
+</html>
