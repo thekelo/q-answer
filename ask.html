@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Same head as index.html -->
+</head>
+<body>
+  <header>
+    <!-- Same header as index.html -->
+  </header>
+
+  <main>
+    <div class="container">
+      <h1>Ask a Question</h1>
+      <form id="askForm">
+        <div class="form-group">
+          <label for="title">Title</label>
+          <input type="text" id="title" required placeholder="What's your question?">
+        </div>
+        
+        <div class="form-group">
+          <label for="body">Details</label>
+          <textarea id="body" rows="10" required></textarea>
+        </div>
+        
+        <div class="form-group">
+          <label for="tags">Tags</label>
+          <input type="text" id="tags" placeholder="Add tags (comma separated)">
+        </div>
+        
+        <button type="submit">Post Question</button>
+      </form>
+    </div>
+  </main>
+
+  <script src="js/questions.js"></script>
+</body>
+</html>
